@@ -11,3 +11,30 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for Firefox */
+.hide-scrollbar {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+@layer utilities {
+  .noise-overlay::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url('https://www.transparenttextures.com/patterns//dotnoise-light-grey.png');
+    opacity: 35%;
+    mix-blend-mode: overlay;
+    z-index: 10;
+    pointer-events: none;
+  }
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
