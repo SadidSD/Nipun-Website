@@ -9,7 +9,8 @@ import nurulAlam from '../BoardOfDirectors/Nurul Alam.jpg';
 import muniruzzaman from '../BoardOfDirectors/Md. Muniruzzaman.jpeg';
 import sumonShaha from '../BoardOfDirectors/Sumon Chandra Shaha.jpg';
 import sanjidaAkter from '../BoardOfDirectors/Mrs. Sanjida Akter.jpg';
-import Aklima from '../BoardOfDirectors/Aklima.jpg'; // Assuming this is the correct path for Aklima Begum
+import Aklima from '../BoardOfDirectors/Aklima.jpg'; 
+import kamruzzaman from '../BoardOfDirectors/Nayan1.jpg';
 
 // Online placeholder URL
 const placeholder = "https://via.placeholder.com/150?text=Photo+Missing";
@@ -49,7 +50,7 @@ const directors = [
     id: 6, 
     name: 'Shah Md: Kamruzzaman', 
     designation: 'Director', 
-    img: placeholder
+    img: kamruzzaman
   },
   { 
     id: 7, 
