@@ -62,7 +62,7 @@ function Footer() {
       >
         <p className="text-[8vw] text-center text-[#FAEDCD] font-josefin font-light">
           For additional <br />
-          information feel <br />
+          information, feel <br />
           free to contact us<br />
           at any time
         </p>
