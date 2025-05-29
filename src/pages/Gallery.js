@@ -30,7 +30,7 @@ const photos = [
   img3,
   img4,
   novPrintC,
-  novPrintD
+  novPrintD,
 ];
 
 function Gallery() {
@@ -43,7 +43,9 @@ function Gallery() {
       <div className="absolute inset-0 pointer-events-none noise-overlay z-10" />
 
       <div className="relative z-20 max-w-6xl mx-auto px-6 py-16">
-        <h1 className="text-[4vw]  mb-12 text-center font-josefin font-light text-[#4E3B2C]">Gallery</h1>
+        <h1 className="text-[4vw] mb-12 text-center font-josefin font-light text-[#4E3B2C]">
+          Gallery
+        </h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {photos.map((src, idx) => (
             <div
@@ -67,10 +69,10 @@ function Gallery() {
           className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50"
           onClick={() => setSelected(null)}
         >
-          <img 
-            src={selected} 
-            alt="Enlarged" 
-            className="max-h-full max-w-full rounded-xl" 
+          <img
+            src={selected}
+            alt="Enlarged"
+            className="max-h-[80vh] max-w-[80vw] rounded-xl object-contain"
           />
         </div>
       )}
