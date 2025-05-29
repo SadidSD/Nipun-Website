@@ -132,7 +132,7 @@ function Footer() {
       >
         <img className="w-full h-auto top-0" src={background} alt="footer background" />
         <p className="absolute top-[25vh] left-[8vw] text-[4vw] font-josefin font-light text-[#FAEDCD]">
-          For additional <br /> information Feel <br /> free to contact us<br /> at any time
+          For additional <br /> information, Feel <br /> free to contact us<br /> at any time
         </p>
 
         <div className="absolute top-[40vh] right-[25vw] h-[1px] w-[15vw] border-[#FAEDCD] border-t-2" />

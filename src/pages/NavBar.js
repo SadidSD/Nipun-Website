@@ -12,7 +12,7 @@ function NavBar() {
     <>
       <nav className="absolute top-0 left-0 w-full z-50 bg-transparent backdrop-blur-none px-6 py-4 flex justify-between items-center">
         <div className="flex items-center">
-          <Link to="/"><img src={logo} alt="Logo" className="h-10 w-auto" /></Link>
+          <Link to="/"><img src={logo} alt="Logo" className="md:h-10 h-16 w-auto" /></Link>
         </div>
         <div className="hidden md:flex flex-1 justify-center space-x-[7vw] text-lg font-light">
           <Link to="/about" className={`${linkTextClass} text-[2rem] transition duration-200`}>About</Link>
