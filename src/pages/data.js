@@ -59,7 +59,7 @@ const projects = [
     image: shwapnonir,
     link: '/projects/ProjectShwapnonir',
     location: 'House no-38, WAPDA Road, Malancha, Savar, Dhaka',
-    type: 'upcoming',
+    type: 'ongoing',
     landArea: '11.50 DCM',
     height: 'Ground floor + 9 Living floor',
     totalFlat: 36,

@@ -15,6 +15,9 @@ import img3 from '../gallary/IMG-20220403-WA0003.jpg';
 import img4 from '../gallary/IMG-20220403-WA0004.jpg';
 import novPrintC from '../gallary/NOV-NOT print-C.jpg';
 import novPrintD from '../gallary/NOV-NOT print-D.jpg';
+import meeting1 from '../gallary/meeting1.jpeg';
+import meeting2 from '../gallary/meeting2.jpeg';
+import meeting3 from '../gallary/meeting3.jpeg';
 
 const photos = [
   aShahriarTower,
@@ -31,6 +34,9 @@ const photos = [
   img4,
   novPrintC,
   novPrintD,
+  meeting1,
+  meeting2,
+  meeting3,
 ];
 
 function Gallery() {
