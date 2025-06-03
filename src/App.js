@@ -11,6 +11,7 @@ import Projects from './pages/Projects'
 import NavBar from './pages/NavBar'
 import ProjectsMap from './pages/ProjectsMap'
 import Footer from './pages/Footer'
+import ProjectPage from './pages/ProjectPage'
 
 // Import individual project pages
 import ProjectNipun from './projects/ProjectNipun'
@@ -25,11 +26,9 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Projects />} />
-        <Route path="/projects/ProjectNipun" element={<ProjectNipun />} />
-        <Route path="/projects/Projectshwapnonir" element={<ProjectShwapnonir />} />
-        <Route path="/projects/ProjectShariar" element={<ProjectShariar />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/career" element={<Career />} />
+        <Route path="/projects/:id" element={<ProjectPage />} />
       </Routes>
       <ProjectsMap />
       <Footer />

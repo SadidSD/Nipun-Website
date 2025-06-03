@@ -1,11 +1,16 @@
 import nipuncity from '../images/project-nipun.jpg'
 import shwapnonir from '../images/project-shwapnonir.jpg'
 import shariar from '../images/project-shariar.jpg'
+import nipunbg from '../images/nipunbg.jpg'
+import shahriarbg from '../images/shahriarbg.jpg'
+import shwapnonirbg from '../images/shwapnonirbg.jpg'
 
 const projects = [
   {
+    id:1,
     title: 'Nipun City',
     image: nipuncity,
+    background: nipunbg,
     link: '/projects/ProjectNipun',
     location: 'Located on Birulia Road about 500 meters from Savar Bus Stand',
     type: 'completed',
@@ -28,8 +33,10 @@ const projects = [
     ]
   },
   {
+    id:2,
     title: 'Nipun Shariar Tower',
     image: shariar,
+    background: shahriarbg,
     link: '/projects/ProjectShariar',
     location: 'Located on Ceramic Road (80ft), about 300 meters from Enam Medical College, Savar',
     type: 'ongoing',
@@ -55,8 +62,10 @@ const projects = [
     ]
   },
   {
+    id:3,
     title: 'Nipun Shwapnonir',
     image: shwapnonir,
+    background: shwapnonirbg,
     link: '/projects/ProjectShwapnonir',
     location: 'House no-38, WAPDA Road, Malancha, Savar, Dhaka',
     type: 'ongoing',

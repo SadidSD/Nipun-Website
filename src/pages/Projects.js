@@ -44,10 +44,10 @@ function Projects() {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-8 sm:gap-8 justify-items-center mt-16">
-          {filteredProjects.map((project, index) => (
+          {filteredProjects.map((project) => (
             <Link
-              to={project.link}
-              key={index}
+              to={`/projects/${project.id}`}
+              key={project.id}
               className="w-full flex flex-col items-start no-underline"
             >
               <div className="w-full aspect-[3/4] sm:w-[20vw] sm:aspect-auto bg-gray-300 rounded-2xl sm:rounded-md overflow-hidden shadow-md">

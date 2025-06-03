@@ -62,6 +62,9 @@ function Gallery() {
               <img
                 src={src}
                 alt={`Gallery Image ${idx + 1}`}
+                loading="lazy"
+                width="300"
+                height="192"
                 className="w-full h-48 object-cover"
               />
             </div>
@@ -78,6 +81,7 @@ function Gallery() {
           <img
             src={selected}
             alt="Enlarged"
+            loading="lazy"
             className="max-h-[80vh] max-w-[80vw] rounded-xl object-contain"
           />
         </div>

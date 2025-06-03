@@ -1,34 +1,11 @@
 import React, { useRef, useState, useEffect } from 'react'
-import { Link } from 'react-router-dom' // If you're using React Router
-import nipuncity from '../images/project-nipun.jpg'
-import shwapnonir from '../images/project-shwapnonir.jpg'
-import shariar from '../images/project-shariar.jpg'
+import { Link } from 'react-router-dom'
+import projects from './data'
 import arrowright from '../images/arrowright.png'
 import arrowleft from '../images/arrowleft.png'
 
 function Projectsec() {
   const containerRef = useRef(null)
-
-  const projects = [
-    {
-      title: 'Nipun City',
-      image: nipuncity,
-      location: 'Birulia Road, Savar',
-      link: '/projects/ProjectNipun',
-    },
-    {
-      title: 'Nipun Shwapnonir',
-      image: shwapnonir,
-      location: 'Malancha, Savar',
-      link: '/projects/ProjectShwapnonir',
-    },
-    {
-      title: 'Nipun Shariar Tower',
-      image: shariar,
-      location: 'Thana Road, Savar',
-      link: '/projects/ProjectShariar',
-    },
-  ]
 
   const [rightscrollable, setRightScrollable] = useState(projects.length - 3)
   const [leftscrollable, setLeftScrollable] = useState(0)
@@ -80,7 +57,7 @@ function Projectsec() {
                 index > 2 ? 'hidden md:flex' : ''
               } min-w-full md:min-w-[33.33vw]`}
             >
-              <a href={project.link} className="flex flex-col items-center">
+              <Link to={`/projects/${project.id}`} className="flex flex-col items-center">
                 <p className="text-[2rem] py-4 font-josefin font-normal text-[#4E3B2C]">{project.title}</p>
                 <img
                   className="w-[80%] md:w-[18vw] h-auto rounded-[38px]"
@@ -89,9 +66,9 @@ function Projectsec() {
                 />
                 <div className="w-[80%] md:w-[15vw] flex items-center mt-4">
                   <span className="flex-grow border-t border-black"></span>
-                  <span className="ml-2 text-[1rem] font-martel">{project.location}</span>
+                  <span className="ml-2 text-[1rem] font-martel capitalize">{project.type}</span>
                 </div>
-              </a>
+              </Link>
             </div>
           ))}
         </div>

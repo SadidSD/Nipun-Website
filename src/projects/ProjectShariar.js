@@ -35,7 +35,7 @@ export default function ProjectShariar() {
     } else {
       return {
         position: 'absolute',
-        top: '70vh',
+        top: '75vh',
         x: '0vw',
       }
     }
