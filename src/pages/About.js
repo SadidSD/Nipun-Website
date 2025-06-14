@@ -11,6 +11,7 @@ import sumonShaha from '../BoardOfDirectors/Sumon Chandra Shaha.jpg';
 import sanjidaAkter from '../BoardOfDirectors/Mrs. Sanjida Akter.jpg';
 import Aklima from '../BoardOfDirectors/Aklima.jpg'; 
 import kamruzzaman from '../BoardOfDirectors/Nayan1.jpg';
+import saifulkabir from '../BoardOfDirectors/Saiful kobir.jpeg';
 
 // Online placeholder URL
 const placeholder = "https://via.placeholder.com/150?text=Photo+Missing";
@@ -38,7 +39,7 @@ const directors = [
     id: 4, 
     name: 'Shaiful Kabir', 
     designation: 'Executive Director', 
-    img: placeholder
+    img: saifulkabir
   },
   { 
     id: 5, 
