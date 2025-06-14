@@ -12,15 +12,13 @@ import NavBar from './pages/NavBar'
 import ProjectsMap from './pages/ProjectsMap'
 import Footer from './pages/Footer'
 import ProjectPage from './pages/ProjectPage'
+import ScrollToTop from './pages/ScrollToTop';
 
-// Import individual project pages
-import ProjectNipun from './projects/ProjectNipun'
-import ProjectShwapnonir from './projects/ProjectShwapnonir'
-import ProjectShariar from './projects/ProjectShariar'
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />

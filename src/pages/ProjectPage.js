@@ -18,6 +18,14 @@ export default function ProjectPage() {
   const [fixedPosition, setFixedPosition] = useState('30vh')
   const [fixedPosition2, setFixedPosition2] = useState('0vh')
 
+  useEffect(() => {
+    if (scrollContainerRef.current) {
+      scrollContainerRef.current.scrollTo({ top: 0, behavior: 'auto' });
+    }
+    // Optionally also:
+    // window.scrollTo(0, 0);
+  }, [id]);
+
   // NEW: State to toggle form visibility
   const [showForm, setShowForm] = useState(false)
 
@@ -96,7 +104,7 @@ export default function ProjectPage() {
   return (
     <div
       ref={scrollContainerRef}
-      className="relative w-full min-h-[220vh] overflow-x-hidden overflow-y-scroll bg-gradient-to-r from-[#FDF1E2] via-[#F9F1E3] to-[#E3D29C]"
+      className="relative w-full min-h-[220vh] overflow-x-hidden bg-gradient-to-r from-[#FDF1E2] via-[#F9F1E3] to-[#E3D29C]"
     >
       {/* Your background and image sections */}
       <div className="absolute inset-0 bg-gradient-to-r from-[#FDF1E2] via-[#F9F1E3] to-[#E3D29C] mix-blend-soft-light opacity-50"></div>
